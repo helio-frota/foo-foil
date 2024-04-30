@@ -1,5 +1,5 @@
-if [ ! -f "hyperfoil-0.23.zip" ]
+if [ ! -f "hyperfoil-0.25.2.zip" ]
 then
-  wget https://github.com/Hyperfoil/Hyperfoil/releases/download/release-0.23/hyperfoil-0.23.zip
-  unzip hyperfoil-0.23.zip
+  wget https://github.com/Hyperfoil/Hyperfoil/releases/download/hyperfoil-all-0.25.2/hyperfoil-0.25.2.zip
+  unzip hyperfoil-0.25.2.zip
 fi
