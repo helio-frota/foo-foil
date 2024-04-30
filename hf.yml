@@ -1,0 +1,18 @@
+name: foo-foil
+http:
+- host: http://localhost:8080
+  sharedConnections: 120
+duration: 10s
+usersPerSec: 50
+scenario:
+  - hello:
+      - httpRequest:
+          GET: /
+          authority: localhost:8080
+          handler:
+            status:
+              range: 2xx
+            onCompletion:
+              set: completed <- yes
+          sync: false
+      - awaitVar: completed
